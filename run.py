@@ -4,12 +4,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import sys
 
-# --- Samma parametrar som vid träning ---
 block_size = 128
 n_embd = 128
 n_heads = 4
 
-# --- Tokenizer från träningen ---
 with open("chars.json", "r", encoding="utf-8") as f:
     chars = json.load(f)
 
@@ -23,7 +21,6 @@ def encode(s):
 def decode(t):
     return "".join([itos[int(i)] for i in t])
 
-# --- TinyGPT-modellen ---
 class TinyGPT(nn.Module):
     def __init__(self, vocab_size, n_embd=n_embd):
         super().__init__()
@@ -61,7 +58,6 @@ class TinyGPT(nn.Module):
         logits = self.lm_head(x)
         return logits
 
-# --- Generate-funktionen ---
 def generate(model, start="h", max_new_tokens=50, temperature=0.8):
     model.eval()
     idx = encode(start).unsqueeze(0)
@@ -75,7 +71,6 @@ def generate(model, start="h", max_new_tokens=50, temperature=0.8):
 
     return decode(idx[0])
 
-# --- Ladda modellen ---
 model = TinyGPT(vocab_size)
 model.load_state_dict(torch.load("final_model.pt", map_location="cpu"))
 model.eval()
