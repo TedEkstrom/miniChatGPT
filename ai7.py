@@ -7,22 +7,22 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # =========================
-# CONFIG (OPTIMERAD)
+# CONFIG (OPTIMIZED)
 # =========================
 
 DATA_PATH = "english_training_data.txt"
 CHECKPOINT_DIR = "checkpoints"
 FINAL_MODEL_PATH = "final_model.pt"
 
-TRAIN_STEPS = 5000        # börja mindre, lättare att se trend
+TRAIN_STEPS = 5000        
 START_STEP = 0
 
-BLOCK_SIZE = 128          # mycket viktig ändring
+BLOCK_SIZE = 128          
 N_EMBD = 128
-N_HEADS = 4               # mindre modell → stabilare
-DROPOUT = 0.0             # stäng av tills modellen lär sig
-LR = 1e-3                 # starkare signal
-BATCH_SIZE = 32           # fler exempel per batch
+N_HEADS = 4               
+DROPOUT = 0.0           
+LR = 1e-3                
+BATCH_SIZE = 32           
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 os.makedirs(CHECKPOINT_DIR, exist_ok=True)
@@ -109,7 +109,7 @@ class TinyGPT(nn.Module):
 
 
 # =========================
-# TRÄNING
+# TRANING
 # =========================
 
 def train():
@@ -118,7 +118,7 @@ def train():
     loss_history = []
     start_step = START_STEP
 
-    # Ev. återuppta
+    # resume
     latest_ckpt = None
     ckpts = [f for f in os.listdir(CHECKPOINT_DIR) if f.startswith("step_") and f.endswith(".pt")]
     if ckpts:
@@ -174,7 +174,7 @@ def train():
 
 
 # =========================
-# GENERERING
+# GENERATION
 # =========================
 
 @torch.no_grad()
@@ -199,7 +199,7 @@ def generate(model, start="h", max_new_tokens=100, temperature=0.8, top_k=20):
 
 
 # =========================
-# ATTENTION‑VISUALISERING
+# ATTENTION VISUALIZATION
 # =========================
 
 @torch.no_grad()
