@@ -4,7 +4,7 @@ MiniChatGPT does not use a perfect training algorithm but is intended more as a 
 Here is a good article explaining the math behind ChatGPT: https://medium.com/@joshuaanang783/the-math-and-logic-behind-chatgpt-this-paper-is-all-you-need-57b82a0527f9
 
 <br>REQUIREMENTS<br/>
-To train it, you first need to install python, torch, sys, seaborn and keep all the files in the same folder. I used Ubuntu in a container to run mine on WSL2.
+To train it, you first need to install python, torch, sys, seaborn and keep all the files in the same folder. I use Ubuntu in a container to run mine on WSL2.
 
 apt install python
 pip install torch, sys, seaborn 
