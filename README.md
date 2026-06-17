@@ -1,6 +1,8 @@
 <br>INTRODUCTION<br/>
 MiniChatGPT does not use a perfect training algorithm but is intended more as a way for me to learn what such training can look like and what the result will be. (I use Copilot to build the script for training and running the model.) Therefore, I cannot claim that the model that is picked up is good, which is also noticeable when testing it. I have used training data that I found from https://github.com/voidful/awesome-chatgpt-dataset and which seems to be a good and legitimate training set.
 
+Här är en bra artikel som förklarar mattematiken bakom ChatGPT: https://medium.com/@joshuaanang783/the-math-and-logic-behind-chatgpt-this-paper-is-all-you-need-57b82a0527f9
+
 <br>REQUIREMENTS<br/>
 To train it, you first need to install python, torch, sys, seaborn and I ran everything on Linux inside a container. After that, all files should be in the same folder.
 
