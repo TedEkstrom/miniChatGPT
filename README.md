@@ -12,7 +12,7 @@ pip install torch, sys, seaborn
 <img width="463" height="29" alt="image" src="https://github.com/user-attachments/assets/e3436c98-41ec-411b-b2aa-352ae02e3620" />
 
 
-<br>TRAIN<br/>
+<br>TRAINING<br/>
 You run train.py and then it will look for the file english_training_data.txt and train the model. During the run, it will create checkpoints that it can resume from.
 
 python train.py
