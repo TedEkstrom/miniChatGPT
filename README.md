@@ -23,7 +23,8 @@ python train.py
 
 It will also create the file: training_loss.png, attention.png, final_model.pt and chars.json when it is finished and an output from the word 'Hello'.
 
-<img width="785" height="160" alt="image" src="https://github.com/user-attachments/assets/f3ed6f1d-f734-4df2-b058-161de45bd569" />
+<img width="779" height="44" alt="image" src="https://github.com/user-attachments/assets/be658f55-a07a-4ba8-86ef-1baca3ce90c2" />
+
 
 <img width="1009" height="62" alt="image" src="https://github.com/user-attachments/assets/551f54f4-df6a-4f35-a5e9-52ef60cc05d1" />
 
