@@ -1,5 +1,5 @@
 <br>INTRODUCTION<br/>
-MiniChatGPT does not use a perfect training algorithm but is intended more as a way for me to learn what such training can look like and what the result will be. (I use Copilot to build the script for training and running the model.) Therefore, I cannot claim that the model that is picked up is good, which is also noticeable when testing it. I have used training data that I found from https://github.com/voidful/awesome-chatgpt-dataset and which seems to be a good and legitimate training set.
+MiniChatGPT does not use a perfect training algorithm but is intended more as a way for me to learn what such training can look like and what the result will be. (I use Copilot to build the script for training and running the model.) Therefore, I cannot claim that the model that is good, which is also noticeable when testing it. I have used training data that I found from https://github.com/voidful/awesome-chatgpt-dataset and which seems to be a good and legitimate training set.
 
 Here is a good article explaining the math behind ChatGPT: https://medium.com/@joshuaanang783/the-math-and-logic-behind-chatgpt-this-paper-is-all-you-need-57b82a0527f9
 
