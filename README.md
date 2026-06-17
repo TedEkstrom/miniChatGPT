@@ -24,7 +24,7 @@ python train.py
 It will also create the file: training_loss.png, attention.png, final_model.pt and chars.json when it is finished and an output from the word 'Hello'.
 
 <br>RUN<br/>
-If you want to test run it, use the file run.py and type python run.py "Hello how are you" which will test the words "Hello how are you" in this case. Replace the word or sentence with what you want to test.
+If you want to test run it, use the file run.py. It will load the trained model along with characters. Keep in mind that the same settings must be made in run.py if you have changed train.py.
 
 python run.py "Hello" 
 
