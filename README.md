@@ -37,5 +37,6 @@ python run.py "Hello"
 
 <br>EXTRACT<br/>
 Since the format that comes from the normal training data is in json format. So I have chosen to convert it to string before so it doesn't take so long for each training.
+
 python extract.py
 
