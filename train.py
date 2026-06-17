@@ -167,7 +167,7 @@ def train():
     plt.title("Training sequence")
     plt.tight_layout()
     plt.savefig("training_loss.png")
-    print("Loss graph save as training_loss.png")
+    #print("Loss graph save as training_loss.png")
 
     return model
 
@@ -220,7 +220,7 @@ def visualize_attention(model, text):
     plt.ylabel("Query position")
     plt.tight_layout()
     plt.savefig("attention.png")
-    print("Attention graph saved as attention.png")
+    #print("Attention graph saved as attention.png")
 
 
 # =========================
