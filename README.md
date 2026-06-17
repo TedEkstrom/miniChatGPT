@@ -23,9 +23,16 @@ python train.py
 
 It will also create the file: training_loss.png, attention.png, final_model.pt and chars.json when it is finished and an output from the word 'Hello'.
 
+<img width="1009" height="62" alt="image" src="https://github.com/user-attachments/assets/551f54f4-df6a-4f35-a5e9-52ef60cc05d1" />
+
 <br>RUN<br/>
 If you want to test run it, use the file run.py. It will load the trained model along with characters. Keep in mind that the same settings must be made in run.py if you have changed train.py.
 
 python run.py "Hello" 
 
+<img width="395" height="40" alt="image" src="https://github.com/user-attachments/assets/67917dc8-b9ea-4326-8687-3fa21f968463" />
+
+<br>EXTRACT<br/>
+Since the format that comes from the normal training data is in json format. So I have chosen to convert it to string before so it doesn't take so long for each training.
+python extract.py
 
