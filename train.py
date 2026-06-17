@@ -3,6 +3,7 @@ import json
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import matplotlib.pyplot as plt
 import seaborn as sns
 
 # =========================
@@ -32,9 +33,9 @@ os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 # =========================
 
 with open(DATA_PATH, "r", encoding="utf-8") as f:
-    custom_text = f.read()
+    all_text = f.read()
 
-chars = sorted(list(set(custom_text)))
+chars = sorted(list(set(all_text)))
 stoi = {ch: i for i, ch in enumerate(chars)}
 itos = {i: ch for ch, i in stoi.items()}
 vocab_size = len(stoi)
@@ -45,7 +46,7 @@ def encode(s: str) -> torch.Tensor:
 def decode(t: torch.Tensor) -> str:
     return "".join([itos[int(i)] for i in t])
 
-data = encode(custom_text)
+data = encode(all_text)
 
 def get_batch(batch_size=BATCH_SIZE, block_size=BLOCK_SIZE):
     ix = torch.randint(len(data) - block_size - 1, (batch_size,))
@@ -167,7 +168,7 @@ def train():
     plt.title("Training sequence")
     plt.tight_layout()
     plt.savefig("training_loss.png")
-    #print("Loss graph save as training_loss.png")
+#    print("Loss graph save as training_loss.png")
 
     return model
 
@@ -220,7 +221,7 @@ def visualize_attention(model, text):
     plt.ylabel("Query position")
     plt.tight_layout()
     plt.savefig("attention.png")
-    #print("Attention graph saved as attention.png")
+#    print("Attention graph saved as attention.png")
 
 
 # =========================
@@ -269,7 +270,7 @@ if __name__ == "__main__":
     print()
     print()
 
-    print("\nExempelgenerering:")
+    print("\nExample generation:")
     print(generate(model, "hello", max_new_tokens=200))
 
     visualize_attention(model, "hello")
