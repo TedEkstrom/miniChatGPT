@@ -29,7 +29,7 @@ It will also create the file: training_loss.png, attention.png, final_model.pt a
 <img width="1009" height="62" alt="image" src="https://github.com/user-attachments/assets/551f54f4-df6a-4f35-a5e9-52ef60cc05d1" />
 
 <br>RUN<br/>
-If you want to test run it, use the file run.py. It will load the trained model along with characters. Keep in mind that the same settings must be made in run.py if you have changed train.py.
+You run the model with run.py. It will load the trained model along with characters. Keep in mind that the same settings must be made in run.py if you have changed train.py.
 
 python run.py "Hello" 
 
