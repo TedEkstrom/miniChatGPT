@@ -36,7 +36,9 @@ python run.py "Hello"
 <img width="395" height="40" alt="image" src="https://github.com/user-attachments/assets/67917dc8-b9ea-4326-8687-3fa21f968463" />
 
 <br>EXTRACT<br/>
-Since the format downloaded when running the scripts from ... generates a file with jsol (and since I can't get their own preprocessing tools to work), I have created my own tool extract.py that just takes the content from the "chat" and converts it into a long text string.
+Since the format downloaded when running the scripts from https://github.com/voidful/awesome-chatgpt-dataset generates a file with jsonl (and since I can't get their own preprocessing tools to work), I have created my own tool extract.py that just takes the content from the "chat" and converts it into a long text string.
 
-python extract.py
+python extract.py 
+
+<img width="850" height="191" alt="image" src="https://github.com/user-attachments/assets/3f6d67d1-0f54-4e68-904a-a1059a2c081a" />
 
