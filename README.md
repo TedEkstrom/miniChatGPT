@@ -7,7 +7,7 @@ Here is a good article explaining the math behind ChatGPT: https://medium.com/@j
 To train it, you first need to install python, torch, sys, seaborn and keep all the files in the same folder. I use Ubuntu in a container to run mine on WSL2.
 
 apt install python
-pip install torch, sys, seaborn 
+<br>pip install torch, sys, seaborn</br> 
 
 <img width="463" height="29" alt="image" src="https://github.com/user-attachments/assets/e3436c98-41ec-411b-b2aa-352ae02e3620" />
 
