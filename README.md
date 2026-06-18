@@ -36,7 +36,7 @@ python run.py "Hello"
 <img width="395" height="40" alt="image" src="https://github.com/user-attachments/assets/67917dc8-b9ea-4326-8687-3fa21f968463" />
 
 <br>EXTRACT<br/>
-Since the format that comes from the normal training data is in json format. So I have chosen to convert it to string before so it doesn't take so long for each training.
+Since the format downloaded when running the scripts from ... generates a file with jsol (and since I can't get their own preprocessing tools to work), I have created my own tool extract.py that just takes the content from the "chat" and converts it into a long text string.
 
 python extract.py
 
