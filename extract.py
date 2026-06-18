@@ -1,8 +1,12 @@
 import json
+import sys
 
 all_text = ""
 
-with open("chatAlpaca_chat.jsonl", "r", encoding="utf-8") as f:
+#sys.argv[1]
+
+#with open("chatAlpaca_chat.jsonl", "r", encoding="utf-8") as f:
+with open(sys.argv[1], "r", encoding="utf-8") as f:
     for line in f:
         line = line.strip()
         if not line:
